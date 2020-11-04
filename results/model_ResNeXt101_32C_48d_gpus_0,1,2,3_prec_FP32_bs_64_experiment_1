@@ -1,0 +1,14 @@
+libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+MIOpen(HIP): Warning [PlainTextDb] Unable to create a directory: "/root/.config/miopen"
+MIOpen(HIP): Warning [PlainTextDb] Unable to create a directory: "/root/.config/miopen"
+MIOpen(HIP): Warning [PlainTextDb] Unable to create a directory: "/root/.config/miopen"
+Total parameters: 828411176
+INFO: running forward and backward for warmup.
+INFO: running the benchmark..
+OK: finished running benchmark..
+--------------------SUMMARY--------------------------
+Microbenchmark for network : ResNeXt101_32C_48d
+Num devices: 4
+Mini batch size [img] : 64
+Time per mini-batch : 1.1044522047042846
+Throughput [img/sec] : 57.94727895639078
