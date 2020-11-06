@@ -1,0 +1,35 @@
+root@d99430a30b0b:~/xgmi-demo# bash run.sh
+Total parameters: 828411176
+INFO: running forward and backward for warmup.
+libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+INFO: running the benchmark..
+OK: finished running benchmark..
+--------------------SUMMARY--------------------------
+Microbenchmark for network : ResNeXt101_32C_48d
+Num devices: 8
+Mini batch size [img] : 128
+Time per mini-batch : 1.8929351568222046
+Throughput [img/sec] : 67.61985456220384
+Total parameters: 828411176
+INFO: running forward and backward for warmup.
+libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+INFO: running the benchmark..
+OK: finished running benchmark..
+--------------------SUMMARY--------------------------
+Microbenchmark for network : ResNeXt101_32C_48d
+Num devices: 8
+Mini batch size [img] : 128
+Time per mini-batch : 1.9156713962554932
+Throughput [img/sec] : 66.81730501911646
+Total parameters: 828411176
+INFO: running forward and backward for warmup.
+libibverbs: Warning: couldn't open config directory '/etc/libibverbs.d'.
+INFO: running the benchmark..
+OK: finished running benchmark..
+--------------------SUMMARY--------------------------
+Microbenchmark for network : ResNeXt101_32C_48d
+Num devices: 8
+Mini batch size [img] : 128
+Time per mini-batch : 1.8868925809860229
+Throughput [img/sec] : 67.83640006317252
+
