@@ -130,11 +130,10 @@ def benchmark(config, container):
 
     results_file = f'model_{model}_gpus_{num_gpus_str}_prec_{precision}_bs_{batch_size}_experiment_{experiment_nb}'
 
-    os.environ["HSA_FORCE_FINE_GRAIN_PCIE"] = '1'
     cmd = f'python3.6 moded_micro_benchmarking_pytorch.py --network {model}  --dataparallel --device_ids={num_gpus_str} --iterations {train_steps} --batch-size {batch_size}'
     print(cmd)
-    # output = container.exec_run(cmd, workdir=container_workdir, environment=dict(os.environ))
-    output = container.exec_run(cmd, workdir=container_workdir)
+
+    output = container.exec_run(cmd, workdir=container_workdir, environment=["HSA_FORCE_FINE_GRAIN_PCIE=1"])
     print(output[1])  # output[0] is the exit code 
     with open(os.path.join(results_path, results_file), 'w') as f:
         f.write(output[1].decode('ascii'))
