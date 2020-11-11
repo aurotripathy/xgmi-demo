@@ -11,9 +11,9 @@ from itertools import product
 import docker
 
 models = ['ResNeXt101_32C_48d']
-num_gpus_strs = ['0,1,2,3'] # , '0,1,2,3,4,5,6,7']  # possibly add another config, '1,2,3,4'
+num_gpus_strs = ['0,1,2,3,4,5,6,7']  # possibly add another config, '1,2,3,4'
 precisions = ['FP32']
-batch_sizes = ['64']  # '128']
+batch_sizes = ['128']
 train_iterations = ['10']
 experiments = ['1', '2', '3']
 
@@ -26,7 +26,7 @@ client = docker.from_env()
 container_img = 'rocm/pytorch:rocm3.8_ubuntu18.04_py3.6_pytorch'
 container_name = 'xgmi-proof-point'
 
-results_path = '/home/isvperf/amd-mlperf/xgmi-demo/results'
+results_path = '/home/isvperf/amd-mlperf/xgmi-demo/results-11-10-2-20'
 results_bind = '/data/results'
 
 perf_path = '/home/isvperf/amd-mlperf/xgmi-demo'
